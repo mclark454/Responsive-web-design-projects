@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<style>
+    .div{
+        text-align: center;
+    }
+
+</style>
+<form id="survey-form">
+<h1 id="title">
+    My gym survey
+</h1>
+    <p id="description">
+        Please fill out the form    
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input 
+            id="name"
+            name="name" 
+            type="text" 
+            required 
+            placeholder="Enter your name">
+        </div>
+        <div>    
+            <label id="email-label" for="email">Email</label>
+            <input 
+            id="email"
+            name="email"
+            type="email" 
+            required 
+            placeholder="Enter your email">
+            </label>
+        </div>
+        <div>
+            <label id="number-label" for="number" >Age</label>
+            <input
+            required 
+            id="number"
+            name="number"
+            type="number"
+            min="1"
+            max="100"
+            placeholder="Enter your Age">
+            </label>
+            
+        </div>
+        <div>
+            Check all that interests you:
+            <label for="Cardio">
+                <input
+                    id="Cardio"
+                    value="Cardio"
+                    type="checkbox"
+                    name="exersize-type">
+                    Cardio
+            </label>
+            <label for="Weight-training">
+                <input
+                    id="Weight-training"
+                    value="Weight-training"
+                    type="checkbox"
+                    name="exersize-type">
+                    Weight-training
+            </label>
+            <label for="crossfit">
+                <input
+                    id="crossfit"
+                    value="crossfit"
+                    type="checkbox"
+                    name="exersize-type">
+                    Weight-training
+                </label>
+        </div>
+        <div>
+            How do you feel about yourself?
+            <label for="underweight">
+                <input
+                    id="underweight"
+                    value="underweight"
+                    type="radio"
+                    name="weight">
+                    Underweight
+            </label>
+            <label for="target-weight">
+                <input
+                    id="target-weight"
+                    value="target-weight"
+                    type="radio"
+                    name="weight">
+                    Target-weight
+            </label>
+            <label for="overview-weight">
+                <input
+                    id="overview-weight"
+                    value="overview-weight"
+                    type="radio"
+                    name="weight">
+                    Over-weight
+            </label>
+        </div>
+        <div>
+            <p>
+                How many times per week do you exercize?
+                <select id="dropdown">
+                    <option value="frequently">Frequently</option>
+                    <option value="moderately">Moderately</option>
+                    <option value="hardly">Hardly</option>
+                </select>
+            </p>
+        </div>
+        <textarea
+            name="comment"
+            placeholder="Leave a comment...">
+        </textarea>
+        <button 
+            type="submit"
+            id="submit">
+            Submit
+        </button>
+    </p>    
+    </form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
